@@ -1,0 +1,64 @@
+{
+  "champions": [
+    {
+      "name": "Lillia",
+      "cost": 1,
+      "class": ["Faerie"],
+      "origin": ["Mage"]
+    },
+    {
+      "name": "Twitch",
+      "cost": 1,
+      "class": ["Frost"],
+      "origin": ["Hunter"]
+    },
+    {
+      "name": "Tristana",
+      "cost": 2,
+      "class": ["Faerie"],
+      "origin": ["Gunner"]
+    },
+    {
+      "name": "Zilean",
+      "cost": 2,
+      "class": ["Frost"],
+      "origin": ["Chrono"]
+    },
+    {
+      "name": "Veigar",
+      "cost": 3,
+      "class": ["Honeymancy"],
+      "origin": ["Mage"]
+    },
+    {
+      "name": "Swain",
+      "cost": 3,
+      "class": ["Frost"],
+      "origin": ["Dragon"]
+    },
+    {
+      "name": "Mordekaiser",
+      "cost": 4,
+      "class": ["Eldritch"],
+      "origin": ["Shadow"]
+    },
+    {
+      "name": "Kassadin",
+      "cost": 4,
+      "class": ["Portal"],
+      "origin": ["Void"]
+    },
+    {
+      "name": "Shyvana",
+      "cost": 5,
+      "class": ["Eldritch"],
+      "origin": ["Dragon"]
+    },
+    {
+      "name": "Norra",
+      "cost": 5,
+      "class": ["Portal"],
+      "origin": ["Mage"]
+    }
+  ]
+}
