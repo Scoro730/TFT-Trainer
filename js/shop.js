@@ -58,7 +58,7 @@ function displayShopChampions(shopChampions) {
         const card = document.createElement('div');
         card.className = 'champion-card';
         card.innerHTML = `
-            <img src="resources/champions/${champion.image}" alt="${champion.name}">
+            <img src="${champion.image}" alt="${champion.name}">
             <h3>${champion.name}</h3>
             <p>Cost: ${champion.cost}</p>
             <p>Class: ${champion.class.join(', ')}</p>
@@ -73,3 +73,20 @@ function displayShopChampions(shopChampions) {
 function rollShop() {
     loadChampions(generateShop);
 }
+function buyChampion(championName) {
+    const champion = champions.find(c => c.name === championName);
+
+    if (!champion) {
+        console.error(`Campeón con nombre ${championName} no encontrado.`);
+        return;
+    }
+
+    if (playerData.gold >= champion.cost) {
+        spendGold(champion.cost);
+        addChampionToBench(champion);
+        rollShop();
+    } else {
+        console.log("No tienes suficiente oro para comprar este campeón.");
+    }
+}
+
