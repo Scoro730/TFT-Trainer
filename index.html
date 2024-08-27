@@ -7,14 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido! Pre Alfa 1</h1>
-        <div class="menu">
-            <a href="home.html">Home</a>
-            <a href="game.html">Game</a>
-            <a href="edition.html">Edition</a>
-            <a href="changelog.html">Cambios</a>
+    <nav class="navigation">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('edit')">Edit</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Welcome to TFT Simulator</h1>
+        <button onclick="startGame()">Jugar</button>
+    </div>
+
+    <div id="game" class="container" style="display: none;">
+        <!-- Tienda, Banco y Campo en una sola pantalla -->
+        <div id="shop" class="game-section">
+            <h2>Shop</h2>
+            <div id="shop-champions" class="champions-container"></div>
+            <button onclick="rollShop()">Refresh Shop</button>
+        </div>
+
+        <div id="bench" class="game-section">
+            <h2>Bench</h2>
+            <div id="bench-champions" class="champions-container"></div>
+        </div>
+
+        <div id="field" class="game-section">
+            <h2>Field</h2>
+            <div id="field-champions" class="champions-container"></div>
         </div>
     </div>
+
+    <script src="app.js"></script>
+    <script src="shop.js"></script>
 </body>
 </html>
