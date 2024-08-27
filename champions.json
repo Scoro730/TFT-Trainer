@@ -1,64 +1,102 @@
 {
   "champions": [
     {
+      "name": "Ashe",
+      "cost": 1,
+      "class": ["Multistriker"],
+      "origin": ["Eldritch"],
+      "image": "resources/champions/ashe.png"
+    },
+    {
+      "name": "Blitzcrank",
+      "cost": 1,
+      "class": ["Vanguard"],
+      "origin": ["Honeymancy"],
+      "image": "resources/champions/blitzcrank.png"
+    },
+    {
+      "name": "Elise",
+      "cost": 1,
+      "class": ["Shapeshifter"],
+      "origin": ["Eldritch"],
+      "image": "resources/champions/elise.png"
+    },
+    {
+      "name": "Jax",
+      "cost": 1,
+      "class": ["Multistriker"],
+      "origin": ["Chrono"],
+      "image": "resources/champions/jax.png"
+    },
+    {
+      "name": "Jayce",
+      "cost": 1,
+      "class": ["Shapeshifter"],
+      "origin": ["Piltover"],
+      "image": "resources/champions/jayce.png"
+    },
+    {
       "name": "Lillia",
       "cost": 1,
-      "class": ["Faerie"],
-      "origin": ["Mage"]
+      "class": ["Mage"],
+      "origin": ["Faerie"],
+      "image": "resources/champions/lillia.png"
+    },
+    {
+      "name": "Nomsy",
+      "cost": 1,
+      "class": ["Dragon"],
+      "origin": ["Sugarcraft"],
+      "image": "resources/champions/nomsy.png"
+    },
+    {
+      "name": "Poppy",
+      "cost": 1,
+      "class": ["Warden"],
+      "origin": ["Yordle"],
+      "image": "resources/champions/poppy.png"
+    },
+    {
+      "name": "Seraphine",
+      "cost": 1,
+      "class": ["Incantor"],
+      "origin": ["Witchcraft"],
+      "image": "resources/champions/seraphine.png"
+    },
+    {
+      "name": "Soraka",
+      "cost": 1,
+      "class": ["Scholar"],
+      "origin": ["Celestial"],
+      "image": "resources/champions/soraka.png"
     },
     {
       "name": "Twitch",
       "cost": 1,
-      "class": ["Frost"],
-      "origin": ["Hunter"]
+      "class": ["Hunter"],
+      "origin": ["Chemtech"],
+      "image": "resources/champions/twitch.png"
     },
     {
-      "name": "Tristana",
-      "cost": 2,
-      "class": ["Faerie"],
-      "origin": ["Gunner"]
+      "name": "Warwick",
+      "cost": 1,
+      "class": ["Brawler"],
+      "origin": ["Chemtech"],
+      "image": "resources/champions/warwick.png"
     },
     {
-      "name": "Zilean",
-      "cost": 2,
-      "class": ["Frost"],
-      "origin": ["Chrono"]
+      "name": "Ziggs",
+      "cost": 1,
+      "class": ["Blaster"],
+      "origin": ["Piltover"],
+      "image": "resources/champions/ziggs.png"
     },
     {
-      "name": "Veigar",
-      "cost": 3,
+      "name": "Zoe",
+      "cost": 1,
       "class": ["Honeymancy"],
-      "origin": ["Mage"]
-    },
-    {
-      "name": "Swain",
-      "cost": 3,
-      "class": ["Frost"],
-      "origin": ["Dragon"]
-    },
-    {
-      "name": "Mordekaiser",
-      "cost": 4,
-      "class": ["Eldritch"],
-      "origin": ["Shadow"]
-    },
-    {
-      "name": "Kassadin",
-      "cost": 4,
-      "class": ["Portal"],
-      "origin": ["Void"]
-    },
-    {
-      "name": "Shyvana",
-      "cost": 5,
-      "class": ["Eldritch"],
-      "origin": ["Dragon"]
-    },
-    {
-      "name": "Norra",
-      "cost": 5,
-      "class": ["Portal"],
-      "origin": ["Mage"]
+      "origin": ["Witchcraft"],
+      "image": "resources/champions/zoe.png"
     }
   ]
 }

@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="game">
+    <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="edition.html">Edition</a>
+    </nav>
+
     <div class="container">
         <h1>Game Simulator</h1>
-        <div id="champions-list"></div>
-        <div id="selected-champions"></div>
-        <button onclick="startGame()">Start Game</button>
+        <div id="champions-list" class="champions-container"></div>
+        <div id="selected-champions" class="champions-container"></div>
     </div>
+
     <script src="app.js"></script>
     <script src="game.js"></script>
 </body>
