@@ -1,14 +1,45 @@
 function startGame() {
-    // Ocultar la sección de inicio y mostrar la sección de juego
     document.getElementById('home').style.display = 'none';
     document.getElementById('game').style.display = 'block';
+
+    // Mostrar información del jugador
+    displayPlayerInfo();
 
     // Inicializar la tienda, banco y campo
     initShop();
     initBench();
     initField();
+
+    rollShop(); // Llama a rollShop para generar la tienda inicialmente
 }
 
+function displayPlayerInfo() {
+    const gameContainer = document.getElementById('game');
+
+    function displayPlayerInfo() {
+        const gameContainer = document.getElementById('game');
+    
+        // Crear contenedor para la información del jugador
+        const playerInfoContainer = document.createElement('div');
+        playerInfoContainer.id = 'player-info';
+        playerInfoContainer.innerHTML = `
+            <div>
+                <img id="player-icon" src="${playerData.icon}" alt="Player Icon" style="width: 50px; height: 50px;">
+                <h3 id="player-name">${playerData.name}</h3>
+            </div>
+            <p id="player-level">Level: ${playerData.level}</p>
+            <p id="player-xp">XP: ${playerData.xp}</p>
+            <p id="player-gold">Gold: ${playerData.gold}</p>
+    
+            <!-- Botones de depuración -->
+            <button onclick="increaseXP(10)">Aumentar XP</button>
+            <button onclick="earnGold(10)">Aumentar Oro</button>
+            <button onclick="levelUp()">Aumentar Nivel</button>
+            <button onclick="resetPlayer()">Reiniciar a por defecto</button>
+        `;
+        gameContainer.prepend(playerInfoContainer);
+    }
+}    
 function initShop() {
     const shopContainer = document.createElement('div');
     shopContainer.id = 'shop-container';
@@ -38,4 +69,12 @@ function initField() {
         <div id="field-champions" class="champions-container"></div>
     `;
     document.getElementById('game').appendChild(fieldContainer);
+}
+
+function updatePlayerInfo() {
+    document.getElementById('player-name').textContent = playerData.name;
+    document.getElementById('player-icon').src = playerData.icon;
+    document.getElementById('player-level').textContent = `Level: ${playerData.level}`;
+    document.getElementById('player-xp').textContent = `XP: ${playerData.xp}`;
+    document.getElementById('player-gold').textContent = `Gold: ${playerData.gold}`;
 }

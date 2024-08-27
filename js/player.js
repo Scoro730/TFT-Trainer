@@ -99,3 +99,24 @@ function debugButtons() {
 
 // Llamar a initPlayer al cargar la página
 document.addEventListener('DOMContentLoaded', initPlayer);
+
+function increaseXP(amount) {
+    playerData.xp += amount;
+    checkLevelUp(); // Verifica si el aumento de XP causa un nivel adicional
+    updatePlayerInfo();
+}
+function earnGold(amount) {
+    playerData.gold += amount;
+    updatePlayerInfo();
+}
+
+function levelUp() {
+    playerData.level += 1;
+    updatePlayerInfo();
+    console.log(`Nivel aumentado a ${playerData.level}`);
+}
+
+function resetPlayer() {
+    initPlayer(); // Reinitialize the player data
+    console.log("Datos del jugador reiniciados a los valores predeterminados.");
+}
