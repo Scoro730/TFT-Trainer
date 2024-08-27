@@ -15,7 +15,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -39,16 +39,20 @@ h1 {
     background-color: #0056b3;
 }
 
+.game-section {
+    margin-top: 20px;
+}
+
 .champions-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .champion-card {
-    width: 100px;
+    width: 120px;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -71,4 +75,18 @@ h1 {
 .champion-card p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+.champion-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.champion-card button:hover {
+    background-color: #0056b3;
 }

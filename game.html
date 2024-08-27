@@ -15,11 +15,28 @@
 
     <div class="container">
         <h1>Game Simulator</h1>
-        <div id="champions-list" class="champions-container"></div>
-        <div id="selected-champions" class="champions-container"></div>
+        
+        <!-- Tienda -->
+        <div id="shop" class="game-section">
+            <h2>Shop</h2>
+            <div id="shop-champions" class="champions-container"></div>
+            <button onclick="rollShop()">Refresh Shop</button>
+        </div>
+
+        <!-- Banco -->
+        <div id="bench" class="game-section">
+            <h2>Bench</h2>
+            <div id="bench-champions" class="champions-container"></div>
+        </div>
+
+        <!-- Campo -->
+        <div id="field" class="game-section">
+            <h2>Field</h2>
+            <div id="field-champions" class="champions-container"></div>
+        </div>
     </div>
 
     <script src="app.js"></script>
-    <script src="game.js"></script>
+    <script src="shop.js"></script>
 </body>
 </html>
