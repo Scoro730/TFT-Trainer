@@ -1,0 +1,38 @@
+{
+    "default_player": {
+      "name": "Player1",
+      "icon": "default_icon.png",
+      "level": 1,
+      "xp": 0,
+      "gold": 5
+    },
+    "level_probabilities": {
+      "1": { "cost_1": 1.0, "cost_2": 0.0, "cost_3": 0.0, "cost_4": 0.0, "cost_5": 0.0 },
+      "2": { "cost_1": 0.75, "cost_2": 0.25, "cost_3": 0.0, "cost_4": 0.0, "cost_5": 0.0 },
+      "3": { "cost_1": 0.55, "cost_2": 0.30, "cost_3": 0.15, "cost_4": 0.0, "cost_5": 0.0 },
+      "4": { "cost_1": 0.45, "cost_2": 0.33, "cost_3": 0.20, "cost_4": 0.02, "cost_5": 0.0 },
+      "5": { "cost_1": 0.35, "cost_2": 0.35, "cost_3": 0.25, "cost_4": 0.05, "cost_5": 0.0 },
+      "6": { "cost_1": 0.25, "cost_2": 0.35, "cost_3": 0.30, "cost_4": 0.10, "cost_5": 0.0 },
+      "7": { "cost_1": 0.20, "cost_2": 0.30, "cost_3": 0.33, "cost_4": 0.15, "cost_5": 0.02 },
+      "8": { "cost_1": 0.15, "cost_2": 0.20, "cost_3": 0.35, "cost_4": 0.24, "cost_5": 0.06 },
+      "9": { "cost_1": 0.10, "cost_2": 0.15, "cost_3": 0.30, "cost_4": 0.30, "cost_5": 0.15 }
+    },
+    "xp_to_level_up": {
+      "1": 2,
+      "2": 4,
+      "3": 8,
+      "4": 12,
+      "5": 20,
+      "6": 36,
+      "7": 56,
+      "8": 80,
+      "9": 100
+    },
+    "gold_settings": {
+      "starting_gold": 5,
+      "gold_per_round": 5,
+      "win_streak_bonus": 1,
+      "loss_streak_bonus": 1
+    }
+  }
+  

@@ -4,39 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFT Simulator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navigation">
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('edit')">Edit</a>
-    </nav>
-
     <div id="home" class="container">
-        <h1>Welcome to TFT Simulator</h1>
+        <h1>TFT-Simulator</h1>
         <button onclick="startGame()">Jugar</button>
     </div>
 
     <div id="game" class="container" style="display: none;">
-        <!-- Tienda, Banco y Campo en una sola pantalla -->
-        <div id="shop" class="game-section">
-            <h2>Shop</h2>
-            <div id="shop-champions" class="champions-container"></div>
-            <button onclick="rollShop()">Refresh Shop</button>
-        </div>
-
-        <div id="bench" class="game-section">
-            <h2>Bench</h2>
-            <div id="bench-champions" class="champions-container"></div>
-        </div>
-
-        <div id="field" class="game-section">
-            <h2>Field</h2>
-            <div id="field-champions" class="champions-container"></div>
-        </div>
+        <!-- Aquí se dibujarán la Tienda, el Banco y el Campo -->
     </div>
 
-    <script src="app.js"></script>
-    <script src="shop.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/game.js"></script> <!-- Asegúrate de agregar game.js -->
 </body>
+<footer> V 0.02</footer>
 </html>
