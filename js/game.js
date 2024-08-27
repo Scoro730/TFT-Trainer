@@ -1,17 +1,41 @@
+let champions = [];  // Define champions como un array vacío
+
+// Cargar los datos de los campeones desde champions.json
+function loadChampions(callback) {
+    fetch('data/champions.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar el archivo champions.json');
+            }
+            return response.json();
+        })
+        .then(data => {
+            champions = data.champions;  // Asigna los datos cargados a la variable champions
+            if (callback) callback();
+        })
+        .catch(error => console.error('Error en loadChampions:', error));
+}
+
+// Llama a loadChampions al iniciar el juego
+document.addEventListener('DOMContentLoaded', () => {
+    loadChampions(() => {
+        // Una vez cargados los campeones, puedes inicializar el juego
+        startGame();
+    });
+});
+
 function startGame() {
     document.getElementById('home').style.display = 'none';
     document.getElementById('game').style.display = 'block';
 
-    // Mostrar información del jugador
     displayPlayerInfo();
-
-    // Inicializar la tienda, banco y campo
+    initBench();  // Inicializa el banco con el campeón por defecto
     initShop();
-    initBench();
     initField();
 
-    rollShop(); // Llama a rollShop para generar la tienda inicialmente
+    rollShop();
 }
+
 
 function displayPlayerInfo() {
     const gameContainer = document.getElementById('game');
