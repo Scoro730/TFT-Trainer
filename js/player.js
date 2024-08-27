@@ -25,12 +25,23 @@ function initPlayer() {
 
 // Actualizar la información del jugador en el DOM
 function updatePlayerInfo() {
-    document.getElementById('player-name').textContent = playerData.name;
-    document.getElementById('player-icon').src = playerData.icon;
-    document.getElementById('player-level').textContent = `Level: ${playerData.level}`;
-    document.getElementById('player-xp').textContent = `XP: ${playerData.xp}`;
-    document.getElementById('player-gold').textContent = `Gold: ${playerData.gold}`;
+    const playerNameElement = document.getElementById('player-name');
+    const playerIconElement = document.getElementById('player-icon');
+    const playerLevelElement = document.getElementById('player-level');
+    const playerXPElement = document.getElementById('player-xp');
+    const playerGoldElement = document.getElementById('player-gold');
+
+    if (playerNameElement && playerIconElement && playerLevelElement && playerXPElement && playerGoldElement) {
+        playerNameElement.textContent = playerData.name;
+        playerIconElement.src = playerData.icon;
+        playerLevelElement.textContent = `Level: ${playerData.level}`;
+        playerXPElement.textContent = `XP: ${playerData.xp}`;
+        playerGoldElement.textContent = `Gold: ${playerData.gold}`;
+    } else {
+        console.error("No se pudieron encontrar los elementos del DOM para actualizar la información del jugador.");
+    }
 }
+
 
 // Aumentar la experiencia y verificar si sube de nivel
 function increaseXP(amount) {

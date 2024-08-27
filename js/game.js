@@ -16,11 +16,10 @@ function startGame() {
 function displayPlayerInfo() {
     const gameContainer = document.getElementById('game');
 
-    function displayPlayerInfo() {
-        const gameContainer = document.getElementById('game');
-    
-        // Crear contenedor para la información del jugador
-        const playerInfoContainer = document.createElement('div');
+    // Verifica si el contenedor ya existe para evitar duplicaciones
+    let playerInfoContainer = document.getElementById('player-info');
+    if (!playerInfoContainer) {
+        playerInfoContainer = document.createElement('div');
         playerInfoContainer.id = 'player-info';
         playerInfoContainer.innerHTML = `
             <div>
@@ -30,7 +29,7 @@ function displayPlayerInfo() {
             <p id="player-level">Level: ${playerData.level}</p>
             <p id="player-xp">XP: ${playerData.xp}</p>
             <p id="player-gold">Gold: ${playerData.gold}</p>
-    
+
             <!-- Botones de depuración -->
             <button onclick="increaseXP(10)">Aumentar XP</button>
             <button onclick="earnGold(10)">Aumentar Oro</button>
@@ -39,7 +38,8 @@ function displayPlayerInfo() {
         `;
         gameContainer.prepend(playerInfoContainer);
     }
-}    
+}
+  
 function initShop() {
     const shopContainer = document.createElement('div');
     shopContainer.id = 'shop-container';
